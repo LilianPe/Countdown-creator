@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style/styleLogin.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="JS/app.js" defer></script>
+</head>
+<body>
+    <div class="form-containeur">
+        <div class="title">
+            <p class="login-txt">Login</p>
+        </div>
+        <div class="form-ep">
+            <form class="form" method="post" action="index.php">
+                <div class="email">
+                    <label>Email</label>
+                    <input class="js-email-input" type="text" placeholder="Email" name="email">
+                    <p class="js-email-error-message email-error-message">Email is not valid</p>
+                </div>
+                <div class="password">
+                    <label>Password</label>
+                    <input class="js-password-input" type="password" name="password" placeholder="Password">
+                    <p class="password-error-message js-password-error-message">Password must be longer than 8 character</p>
+                    <div class="show-password">
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkb">
+                        </div>
+                        <p>Show password</p>
+                    </div>
+                    <div class="singup-redirect create">
+                        <a href="singup.html"><p>Create an account ?</p></a>
+                    </div>
+                </div>
+                <button class="js-submit-btn submit-btn" name="valid_form" value="valider">Login</button>
+            </form> 
+        </div>
+    </div>
+</body>
+</html>
