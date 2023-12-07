@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto+Condensed:wght@500&display=swap');
+
+
+body{
+    background: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?t=st=1701422607~exp=1701423207~hmac=c838ae81b0e879875669180e0b79fe31d8d56209ea387798786887ccc4acd85d") no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Poppins' , sans-serif;
+    backdrop-filter: blur(2.5px);
+}
+
+.select-option{
+    display: flex;
+    justify-content: space-around;
+}
+
+.view-btn,
+.create-btn{
+    height: 90px;
+    width: 90px;
+    border-radius: 45px;
+    border: 0px solid black;
+    background: transparent;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: background-color 0.4s, 
+    transform 0.4s,
+    box-shadow 0.4s
+}
+
+
+.view-btn:hover,
+.create-btn:hover{
+    background-color: rgba(165, 42, 42, 0.281);
+    transform: rotate(360deg);
+    border: solid 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.411);
+
+}
